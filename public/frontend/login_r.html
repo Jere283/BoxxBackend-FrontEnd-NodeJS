@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+  <title>Boxx Driver</title>
+</head>
+
+<body>
+  <!-- Barra de navegacion y Menu-->
+
+  <!-- Content here -->
+  <div class="container">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-9">
+          <img src="img/Logo.png" class="rounded mx-auto d-block pt-5" alt="..." width="100%">
+          <h1 class="text-end">Driver</h1>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-10 pt-3">
+          <form action="rep/authenticate" method="post">
+            <div class="mb-3">
+              <label for="uname" class="form-label">Correo</label>
+              <input type="email" name="uname" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp"  class="form-text">Nunca compartiremos tu contraseña con nadie mas.</div>
+            </div>
+            <div class="mb-3">
+              <label for="psw" class="form-label">Contraseña</label>
+              <input type="password" name="psw" class="form-control" id="password">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input bg-dark" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Mantener Sesión</label>
+            </div>
+            <button class="btn btn-dark rounded-pill" type="submit">Iniciar Sesión</button>
+            <div class="alert alert-danger mt-3" role="alert" id="alerta-login" style="display:none">
+            </div>
+          </form>
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="cuerpo">
+
+  </div>
+  <!-- Contenedor Principal-->
+
+
+
+
+  <script src="js/index.js"></script>
+
+  <script src="libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/12c21b7c23.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

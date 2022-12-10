@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <title>Boxx-Inicia Sesion</title>
+</head>
+
+<body>
+
+    <nav style="border-bottom: solid 2px black;">
+        <!-- container que contiene las 3 columnas en la que se divide la navbar, dentro de la misma estan
+        3 botones y un logo -->
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col">
+                    <!-- boton de menu -->
+                    <button class="butt" onclick="openNav()"><i class="fa-solid fa-bars ico"></i></button>
+                </div>
+                <div class="col" style="position: relative ;">
+                    <!-- Logo Principal -->
+                    <div>
+                        <img class="logo" src="img/Logo.png" alt="" onclick="return2Main()">
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Div contenedor que contiene 3 divs con un boton de busqueda y un boton de una shopping
+                    bag que fueron arreglados en columnas utilizando Flexbox -->
+                    <div st class="cont">
+                        <div>
+                            <button class="butt"><i class="fa-solid fa-bag-shopping ico"></i></button>
+                        </div>
+                        <div>
+                            <button class="butt"><i class="fa-solid fa-user ico" onclick=""></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <form action="user/authenticate" method="post">
+
+        <div class="container" style="margin-top: 30%;">
+            <div class="lImg">
+                <img style=" height: 60px;" src="img/Logo.png">
+            </div>
+
+            <div class="incorresPsw"></div>
+
+            <div class="contLogs">
+                <label for="username"><b>Nombre de Usuario</b></label>
+                <input class="logs" type="text" placeholder="" name="uname" required>
+
+                <label for="psw"><b>Clave</b></label>
+                <input class="logs" type="password" placeholder="" name="psw" required>
+
+                <button name="login" class="logBtn" type="submit">Ingresar</button>
+                <span style="display: flex; justify-content: center;"><a style="font-weight: bold"
+                        href="register.html">No tienes cuenta? Registrate aqui</a></span>
+                <div style="margin-top: 10px; display: flex; flex-direction:row; justify-content: space-between;">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> <b>Recuerdame</b>
+                    </label>
+                    <span style="font-weight: bold; color: black;" class="psw"><a href="#">Olvidaste tu clave?</a>
+                    </span>
+                </div>
+                <div>
+                    <span style="font-weight: bold; color: black;" class="psw"><a href="#">Ingresa como repartidor</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Side nav menu bar-->
+    <!-- Side nav menu bar-->
+    <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="Services">Services</a>
+        <a href="Clients">Clients</a>
+        <a href="Cat4">Cat4</a>
+
+        <div id="contNav">
+
+        </div>
+
+    </div>
+
+<footer>
+    <div style="background-color: white; height: 100px ">
+
+    </div>
+</footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/12c21b7c23.js" crossorigin="anonymous"></script>
+    <script src="js/controlador-backend.js"></script>
+
+</body>
+
+</html>

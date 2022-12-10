@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    
+    <body>
+        
+        <%- include('../partials/sidebar'); %>
+
+        <header>
+            <%- include('../partials/navbar'); %>
+        </header>
+
+        <div class="container">
+            <h2>Hola <%= names %></h2>
+            <button class="btn btn-dark"><a href="/user/logout">LogOut</a></button>
+                
+        </div>
+
+
+        
+    <script src="/js/index.js"></script>
+    <script src="/libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/12c21b7c23.js" crossorigin="anonymous"></script>
+
+    
+    </body>
+</html>

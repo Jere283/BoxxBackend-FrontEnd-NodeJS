@@ -1,0 +1,210 @@
+body {
+  background-color: rgb(14, 13, 13);
+}
+
+/*---------------------------------------------------------------------------------------------------
+                           Estilos en la landing page
+-----------------------------------------------------------------------------------------------------*
+
+/*Logo Boxx */
+.center{
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 160px;
+  height: 50px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-60%, -50%);
+}
+
+.hov:hover {
+  opacity: 0.85;
+  transform: scale(1.015);
+}
+/* Iconos ( menus, shopping bag, etc.*/
+.ico {
+  padding-top: 14px;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+/* display contenedor de iconos ( rows) */
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Botones*/
+.butt {
+  border: none;
+  background: none;
+}
+
+/* Barra de novedades */
+.nov {
+  background-color: #929aab;
+  height: 400px;
+}
+
+/* Contenedor de elementos principales*/
+.princi {
+  margin: 20px;
+}
+
+/* Contenedor de productos FlexBox*/
+.contProd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Productos o elementod dentro del 2nd cont*/
+.cubProd {
+  background-color: #929aab;
+  height: 190px;
+  border: solid 1px black;
+}
+
+/*Footer*/
+.foot {
+  background-color: black;
+  height: 250px;
+}
+
+/* The side navigation menu */
+.sideNav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* mantiene oculta la navBar */
+  position: fixed; /* lo mantiene en lugar */
+  z-index: 1; /* para tenerla arriba */
+  top: 0; /* para tenerla arriva */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* elimina el scroll bar horizontal*/
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* los links del navbar */
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* boton de cerrar */
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* trarnsicion */
+#contNav {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------
+                          FIN Estilos en la landing page
+-----------------------------------------------------------------------------------------------------*  
+
+/*---------------------------------------------------------------------------------------------------
+                           Estilos en la Login y Register page
+-----------------------------------------------------------------------------------------------------*/
+
+.lImg {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logs {
+  border-radius: 5px;
+  background-color: #929aab;
+  color: white;
+  border: solid 2px transparent;
+  height: 40px;
+}
+
+.contLogs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.logBtn {
+  font-weight: bold;
+  margin: 20px;
+  border: solid 2px black;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 25%;
+  height: 40px;
+  background-color: #393e46;
+  color: white;
+}
+
+.logs:hover {
+  border: solid 2px black;
+}
+/*---------------------------------------------------------------------------------------------------
+                        FIN Estilos en la Login y Register page
+-----------------------------------------------------------------------------------------------------*/
+/* Hovers */
+.ico:hover {
+  transform: scale(1.05);
+}
+
+/* Cambiar color de letras al presionarlo*/
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+/*tablets*/
+@media screen and (min-width: 768px) {
+  .cubProd {
+    height: 250px;
+    width: 200px;
+  }
+
+  /*Logo Boxx */
+  .logo {
+    width: 250px;
+    height: 80px;
+    margin-top: 7px;
+    margin-right: 50px;
+  }
+
+  /* Iconos ( menus, shopping bag, etc.*/
+  .ico {
+    padding-top: 24px;
+    font-size: 45px;
+  }
+}
+
+/* Celulares pequenhos */
+@media screen and (max-width: 425px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px;
+  }
+}

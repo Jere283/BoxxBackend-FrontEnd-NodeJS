@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+    <title>Boxx Driver</title>
+</head>
+<body onload="llenarinfoe()">
+    <!-- Barra de navegacion y Menu-->
+
+        <!-- Content here -->
+    
+    <div>
+      <header>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="bg-dark border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Boxx Deliverys</a>
+                  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <img id="img-menu" class="rounded-circle" width="15%" alt="...">
+                      <h5 class="offcanvas-title" id="nombre-menu">Ramiro Lopez</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link "  href="Repartidores_r.html">Principal <i class="fa-solid fa-house"></i></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Mis Entregas <i class="fa-solid fa-truck-fast"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cuenta_r.html">Mi Cuenta <i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cerrar Sesión <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                            
+                        </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+            </div>
+          </nav>
+        </header>
+          
+    </div>
+    <div id="cuerpo" class="mt-3">
+      
+      
+      <div class="container text-center">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-8">
+              <h2 class="text-start">Resumen</h2>
+            </div>
+            <div class="col-4">
+              <select class="form-select border-0" style="background-color:#F3F3F3" aria-label="Default select example">
+                <option selected>Hoy</option>
+                <option value="1">Ultimos 7 dias</option>
+                <option value="2">Ultimos 30 dias</option>
+                <option value="3">Ultimos 12 meses</option>
+                <option value="4">Totales</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <p class="text-start mt-2 fs-5 text-secondary fw-semibold ps-3">Hola Ramiro has tenido 2 pedidos el dia de hoy</p>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col rounded-pill pt-1 pb-1 m-2" style="background-color:#F3F3F3" >
+            <i class="fa-solid fa-dollar-sign" style="color: #666666;" id="gn"></i>
+          </div>
+          <div class="col rounded-pill pt-1 pb-1 m-2" style="background-color:#F3F3F3">
+            <i class="fa-solid fa-star" style="color: #666666;" id="estrellas"></i>
+            
+          </div>
+          <div class="col rounded-pill pt-1 pb-1 m-2" style="background-color:#F3F3F3">
+            <i class="fa-solid fa-message" style="color: #666666;" id="comentarios"></i>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <table class="table me-2 ms-2 " id="entregas">
+        <thead>  
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Comercio</th>
+            <th scope="col">Total</th>
+            <th scope="col">Comisión</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Boxx</td>
+            <td>L.365</td>
+            <td>L.80</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Boxx</td>
+            <td>L.365</td>
+            <td>L.80</td>
+          </tr>
+          
+          
+          
+        </tbody>
+      </table>
+      
+         
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col align-self-start">
+          
+          </div>
+          <div class="col align-self-center">
+            
+          </div>
+          <div class="col align-self-end">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link text-bg-light">Anterior</a>
+                </li>
+                <li class="page-item  bg-dark" >
+                  <a class="page-link bg-dark text-bg-dark" href="#">1</a></li>
+                <li class="page-item text-bg-light" aria-current="page">
+                  <a class="page-link text-bg-light" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link text-bg-light" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link text-bg-light" href="#">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <!-- Contenedor Principal-->
+    
+    
+
+    
+    <script src="js/index.js"></script>
+   
+    <script src="libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cda6c667bd.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

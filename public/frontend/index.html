@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <title>Boxx</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav style="border-bottom: solid 2px black;">
+        <!-- container que contiene las 3 columnas en la que se divide la navbar, dentro de la misma estan
+        3 botones y un logo -->
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col">
+                    <!-- boton de menu -->
+                    <button class="butt" onclick="openNav()"><i class="fa-solid fa-bars ico"></i></button>
+                </div>
+                <div class="col" style="position: relative ;">
+                    <!-- Logo Principal -->
+                    <div>
+                        <img class="logo" src="img/Logo.png" alt="" onclick="return2Main()">
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Div contenedor que contiene 3 divs con un boton de busqueda y un boton de una shopping
+                    bag que fueron arreglados en columnas utilizando Flexbox -->
+                    <div st class="cont">
+                        <div>
+                            <a href="carrito.html"><button class="butt"><i class="fa-solid fa-bag-shopping ico"></i></button></a>
+                        </div>
+                        <div>
+                            <button class="butt"><i class="fa-solid fa-user ico" onclick="change2Login() "></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la pagina-->
+    <div id="cuerpo">
+        <!-- Modal -->
+
+        <!--Contenido principal (novedades) -->
+        <div class="card text-bg-dark border border-0 rounded-bottom">
+            <img src="img/Hombre/Camisetas/CAM-PROM.png" class="card-img rounded-bottom" alt="...">
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-dark">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              
+            </div>
+          </div>
+        
+        
+        <!-- Container que contendra las categorias de la landing page-->
+        <div class="princi">
+            
+            <nav aria-label="...">
+                
+                <ul class="pagination pagination-sm ">
+                  <li class="page-item active bg-light rounded-pill" aria-current="page">
+                    <span class="page-link bg-dark border-dark rounded-pill rounded-end">Hombres</span>
+                  </li>
+                  <li class="page-item"><a class="page-link text-dark rounded-pill rounded-start" href="#">Mujeres</a></li>
+                  
+                </ul>
+              </nav>
+            <nav aria-label="...">
+                
+                <ul class="pagination pagination-sm ">
+                  <li class="page-item active bg-light" aria-current="page">
+                    <span class="page-link bg-dark border-dark rounded-pill rounded-end">Camisetas</span>
+                  </li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">Deportivos</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">Pantalones</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">Shorts</a></li>
+                  <li class="page-item"><a class="page-link text-dark rounded-pill rounded-start" href="#">Sudaderas</a></li>
+                </ul>
+              </nav>
+              
+            <h3 id="nomcat"> Ofertas</h3>
+            
+            <p class="lh-1 text-black-50">Encuentra una confianza renovada en la ropa de hombre, sabiendo que estás usando lo mejor en calidad, diseño y moda, desde ropa de calle hasta ropa deportiva.</p>
+            <!--<div class="container text-start shadow p-3 mb-5 bg-body rounded">
+                <div class="row row-cols-2 p-2">
+                    <div class="col">
+                        <span class="align-middle">Cantidad</span>
+                    </div>
+                    <div class="col text-end">
+                        <div class="btn-group rounded-pill" role="group" aria-label="Basic example">
+                            <button type="button " class="btn btn-dark fw-bold" onclick="disminuir()">-</button>
+                            <input class="form-control text-center rounded-0" type="text" id="canti" onclick="aumentar()" value=0 aria-label="Disabled input example" disabled readonly>
+                            <button type="button" class="btn btn-dark fw-bold" onclick="aumentar()">+</button>
+                        </div>q
+                    </div>
+                </div>
+            </div>-->
+            
+            <div class="container text-center">
+            
+                <div class="row row-cols-3" id="primeroca">
+                  <!--<div class="col">Column</div>
+                  <div class="col">Column</div>
+                  <div class="col">Column</div>
+                  <div class="col">Column</div>-->
+                </div>
+              </div>
+            
+        </div>
+        
+        <!-- Side nav menu bar-->
+        <div id="mySideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="Services">Services</a>
+            <a href="Clients">Clients</a>
+            <a href="Cat4">Cat4</a>
+        
+            <div id="contNav">
+
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalprod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Ordenar</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                
+            <div>
+            <img src="${productos[i].imagen}" id="img-prod" class="d-block w-100" alt="...">
+            </div>
+          <h1 class="modal-title fs-5" id="nombre-producto">${productos[i].nombreprod}</h1>
+          <p class="fw-bold fw-2" id="precio">L.${productos[i].precio}</p>
+          
+            <div class="container text-start shadow p-3 mb-2 bg-body rounded shadow">
+                    <div class="row row-cols-2 p-2 ">
+                        <div class="col">
+                            <span class="align-middle">Talla</span>
+                        </div>
+                        <div class="col text-end">
+                        <select class="form-select w-100 rounded-pill" aria-label="Default select example">
+                        <option selected class="text-center">Seleccionar</option>
+                        <option value="1" class="text-center">S</option>
+                        <option value="2" class="text-center">M</option>
+                        <option value="3" class="text-center">L</option>
+                        <option value="4" class="text-center">XL</option>
+                      </select>
+                        </div>
+                    </div>
+                </div>
+            <div class="container text-start shadow p-3 mb-2 bg-body rounded">
+                    <div class="row row-cols-2 p-2 ">
+                        <div class="col">
+                            <span class="align-middle">Cantidad</span>
+                        </div>
+                        <div class="col text-end">
+                            <div class="btn-group rounded-pill" role="group" aria-label="Basic example">
+                                
+                                <input class="form-control text-center rounded-pill" type="number" id="canti" onclick="aumentar()" value=0 aria-label="Disabled input example" >
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="container text-center">
+      
+    </div>
+          
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark w-100">Agregar a mi Pedido </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pie de pagina-->
+    <footer>
+        <div class="foot"></div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/12c21b7c23.js" crossorigin="anonymous"></script>
+    <script src="js/controlador-backend.js"></script>
+    </div>
+</body>
+
+</html>

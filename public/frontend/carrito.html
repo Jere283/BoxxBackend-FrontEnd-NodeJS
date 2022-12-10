@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+        <script src="js/jquery-3.6.1.min.js"></script>
+        
+    </head>
+    
+    <body class="bg-light">
+
+    <!--Nav Bar-->    
+    <nav class="navbar navbar-light bg-light border-bottom border-2">
+        <div class="container text-start">
+            <div class="row row-cols-2">
+              <div class="col col-3 pt-1">
+                <button class="bg-light border-0" type="button">
+                    <a class="nav-link "  href="categorias.html"><i class="fa-solid fa-arrow-left-long text-dark fw-bold fs-3"></i></a>
+                    
+                </button> 
+              </div>
+              <div class="col col-9 "><h3 class="text-start">Mi carrito</h3></div>
+            </div>
+          </div>
+      </nav>
+      <div class="container text-start mt-2 border">
+        <div class="row row-cols-1" id="carrito-compras">
+          <!--<div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row row-cols-2 border-bottom pb-3" >
+                        <div class="col col-3">
+                            <img src="img/Hombre/Camisetas/CGH-L-1.webp" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col col-9">
+                            <h5 class="card-title mb-0">Boxx</h5>
+                            <p class="card-text mb-0">Camisa</p>
+                            <p class="card-text mb-0">L.136</p>
+                            <select class="form-select rounded-pill w-50" aria-label="Default select example" width="25px">
+                                <option selected>Cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                              </select>
+
+
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mt-3">
+                        <button class="btn btn-danger" type="button" onclick="carritocompras()">Eliminar</button>
+                      </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row row-cols-2 border-bottom pb-3" >
+                        <div class="col col-3">
+                            <img src="img/Hombre/Camisetas/CGH-L-1.webp" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col col-9">
+                            <h5 class="card-title mb-0">Boxx</h5>
+                            <p class="card-text mb-0">Camisa</p>
+                            <p class="card-text mb-0">L.136</p>
+                            <select class="form-select rounded-pill w-50" aria-label="Default select example" width="25px">
+                                <option selected>Cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                              </select>
+
+
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mt-3">
+                        <button class="btn btn-danger" type="button">Eliminar</button>
+                      </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card">
+            <div class="card-body">
+                <div class="row row-cols-2 border-bottom pb-3" >
+                    <div class="col col-3">
+                        <img src="img/Hombre/Camisetas/CGH-L-1.webp" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col col-9">
+                        <h5 class="card-title mb-0">Boxx</h5>
+                        <p class="card-text mb-0">Camisa</p>
+                        <p class="card-text mb-0">L.136</p>
+                        <select class="form-select rounded-pill w-50" aria-label="Default select example" width="25px">
+                            <option selected>Cantidad</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+
+
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-danger" type="button">Eliminar</button>
+                  </div>
+            </div>
+          </div></div>
+          <div class="col "><div class="card border">
+            <div class="card-body border">
+                <div class="row row-cols-2 border-bottom pb-3 " >
+                    <div class="col col-3">
+                        <img src="img/Hombre/Camisetas/CGH-L-1.webp" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col col-9">
+                        <h5 class="card-title mb-0">Boxx</h5>
+                        <p class="card-text mb-0">Camisa</p>
+                        <p class="card-text mb-0">L.136</p>
+                        <select class="form-select rounded-pill w-50" aria-label="Default select example" width="25px">
+                            <option selected>4</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+
+
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-danger" type="button">Eliminar</button>
+                  </div>
+            </div>-->
+            
+          
+        </div>
+        <div id="subtotal">Subtotal(4 item):</div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-dark rounded-pill shadow " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Finalizar Pedido</button>
+        </div>
+        
+
+        <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Procesar Pedido</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Seguro que desear procesar su orden?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary">Procesar</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+        <!-- Side  Bar-->
+        <div id="mySideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="Services">Services</a>
+            <a href="Clients">Clients</a>
+            <a href="Cat4">Cat4</a>
+        
+            <div id="contNav">
+    
+            </div>
+        
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/controlador-carrito.js"></script>
+    <script src="libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/12c21b7c23.js" crossorigin="anonymous"></script>
+    <script src="js/controlador-backend.js"></script>
+
+    
+    </body>
+</html>

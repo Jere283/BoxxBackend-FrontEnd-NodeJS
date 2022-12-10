@@ -1,0 +1,58 @@
+[{
+    "nombreCategoria": "Camisetas Hombre",
+    "genero": "Hombre",
+    "portada": "img/Hombre/Camisetas/Portada.webp",
+   " productos": [
+      {
+        "nombreprod": "Camisa Grafica Hombre Nike",
+        "genero": "Hombre",
+        "talla": "L",
+        "imagen": "img/Hombre/Camisetas/CGH-L-1.webp",
+        "precio": 250
+      },
+      {
+        "nombreprod": "Camisa Grafica ",
+       " genero": "Hombre",
+       " talla": "L",
+       " imagen": "img/Hombre/Camisetas/CGH-L-2.webp",
+        "precio": 300
+      },
+      {
+        "nombreprod": "Camisa Grafica ",
+        "genero": "Hombre",
+        "talla": "M",
+        "imagen": "img/Hombre/Camisetas/CGH-M-1.webp",
+        "precio": 300
+      },
+      {
+        "nombreprod": "Camisa Grafica",
+        "genero": "Hombre",
+        "talla": "M",
+        "imagen": "img/Hombre/Camisetas/CGH-M-2.webp",
+        "precio": 450
+      }
+    ]
+  },
+  {
+    "nombreCategoria": "Deportivos Hombre",
+    "genero": "Hombre",
+    "portada": "img/Hombre/Camisetas/Portada.webp",
+    "productos": [
+      {
+        "nombreprod": "SHORTS DEPORTIVOS",
+        "genero": "Hombre",
+        "talla": "L",
+        "imagen": "CGH-L-1.webx",
+        "precio": 250
+      },
+      {
+        "nombreprod": "CAMISA GRAFICA ",
+        "genero": "Hombre",
+        "talla" : "L",
+        "imagen": "CGH-L-2.webx",
+        "precio": 300
+      }
+    ]
+  }
+]
+  
